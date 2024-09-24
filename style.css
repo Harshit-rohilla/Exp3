@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    background-color: grey;
+    position: relative;
+}
+
+.goku{
+    height: 600px;
+    width: 500px;
+    /* border: solid red 2px; */
+  
+    position: absolute;
+    right:30px ;
+    bottom: 0px;
+    z-index: 2;
+}
+   
+    @keyframes moveleft {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-750px);
+        }
+      }
+      
+      .beam {
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        right: 420px;
+        top: 7px;
+        
+        animation: moveleft 2s ease-out 3s infinite;
+      }
+      
+img{
+    height: 100%;
+    width: 100%;   
+    object-fit: contain;
+}
